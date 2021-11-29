@@ -4,6 +4,10 @@ import Appointment from "../models/Appointment";
 class AppointmentsRepository {
   private appointments: Appointment[];
 
+  public all(): Appointment[] {
+    return this.appointments;
+  }
+
   constructor() {
     this.appointments = [];
   }
